@@ -4,8 +4,6 @@ import Statistics from "components/Statistics/Statistics";
 import Notification from "components/Notifications/Notification";
 import Section from "components/Section/Section";
 
-const options = ['Good', "Neutral", "Bad"];
-
 class Counter extends React.Component{
 
     state = {
@@ -44,7 +42,7 @@ class Counter extends React.Component{
             <>
                 <Section title="Please leave feedback">
                     <FeedbackOptions
-                    options = {options}
+                    options = {Object.keys(this.state)}
                     onLeaveFeedback={this.feedback}
                     />
                     

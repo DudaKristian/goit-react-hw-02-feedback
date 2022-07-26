@@ -13,7 +13,7 @@ const Section = ({ title, children }) => {
 
 Section.propTypes = {
     title: PropTypes.string.isRequired,
-    positivePercentage: PropTypes.node.isRequired
+    children: PropTypes.node.isRequired
 }
 
 export default Section
